@@ -1,11 +1,11 @@
 #include <string>
-#include <fstream>
-#include <sstream>
 #include <iostream>
 #include <vector>
 #include <algorithm>
 #include <wex.h>
 #include "cStarterGUI.h"
+
+#include "cRoute.h"
 
 class cGUI : public cStarterGUI
 {
@@ -29,6 +29,9 @@ private:
 
 main()
 {
+    cRoute R;
+    R.read("../data/date1.h");
+    R.nextBus( 0, cxy(0,0));
     cGUI theGUI;
     return 0;
 }
