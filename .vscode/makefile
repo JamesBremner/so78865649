@@ -1,5 +1,5 @@
 #source file search paths
-VPATH = ./src 
+VPATH = ./src ../raven-set
 
 	# compiler include search paths
 INCS = -I./include \
